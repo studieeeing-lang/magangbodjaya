@@ -1,0 +1,28 @@
+{
+  "name": "repo",
+  "version": "1.0.0",
+  "description": "Tracker magang bersama dengan Netlify Database",
+  "scripts": {
+    "check": "tsc --noEmit --module nodenext --moduleResolution nodenext --target es2022 --skipLibCheck netlify/functions/tracker.mts netlify/functions/kating-image.mts netlify/functions/proposal-pdf.mts db/index.ts db/schema.ts && node --check public/sync.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://x-access-token:eyJ0eXAiOiJKV1QiLCJraWQiOiJwRFpsK3MrTmZBTVBCeExqdXlka0dYK2JYV01xbFprc1U1RW1DUE1mQXVnIiwiYWxnIjoiSFMyNTYifQ.eyJzY29wZSI6InJlcG86ZGU1YjU4NDktM2EyMy00Y2M0LWFkMzUtYjE0OGYyMjYzYzA3OndyaXRlIiwicmVwb19zbHVnIjoibXVlenphLWpvam8vbWFnbmlmaWNlbnQtc3BlY3Vsb29zLWY3N2NiMiIsImV4cCI6MTc5Mjk5NjI4MCwiaWF0IjoxNzkyOTkyNjgwfQ.WbPzrX47pkHq2h-_ZhRfXkeEY4s73QFkIJ_ALtAGxFM@hgit.services-prod.nsvcs.net/muezza-jojo/magnificent-speculoos-f77cb2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@netlify/blobs": "^11.1.6",
+    "@netlify/database": "^2.0.1",
+    "@netlify/functions": "^6.0.3",
+    "drizzle-orm": "^1.0.0-beta.22"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "drizzle-kit": "^1.0.0-beta.22",
+    "typescript": "^7.0.2"
+  },
+  "private": true
+}
